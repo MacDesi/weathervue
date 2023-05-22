@@ -1,0 +1,120 @@
+/* Styling for the Weather App */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  animation: gradientAnimation 10s linear infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .weather-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    background: linear-gradient(to right, #0D0F44, #3C12A4, #0000ff);
+    background-size: 200% 200%;
+    color: #fff;
+    animation: gradientAnimation 10s linear infinite;
+  }
+  
+  .title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+  }
+  
+  .location-name {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .temperature {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .condition {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .unit-toggle-btn {
+    background-color: #5C2CB5;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .unit-toggle-btn:hover {
+    background-color: #30AAF4;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .search-form input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    margin-right: 0;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+  }
+  
+  .search-form button {
+    background-color: #5C2CB5;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-form button:hover {
+    background-color: #30AAF4;
+  }
+
+  .logo {
+    width: 350px; /* Adjust the width as per your requirement */
+    height: 70px; /* Maintain the aspect ratio of the image */
+  }
+
+  
